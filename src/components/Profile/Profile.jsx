@@ -11,7 +11,7 @@ const Profile = () => {
     return <span>Cargando...</span>;
   }
 
-  return <div>Profile {user.name}</div>;
-};
+  return <div>Profile {user.name} </div>;
+ };
 
 export default Profile;

@@ -10,11 +10,16 @@ const users = (state, action) => {
         ...state,
         user: action.payload,
       };
-      case "LOGOUT":
+    case "LOGOUT":
       return {
         ...state,
         user: null,
-        token: null
+        token: null,
+      };
+    case "REGISTER":
+      return {
+        ...state,
+        user: action.payload,
       };
 
     default:

@@ -15,20 +15,22 @@ function Header() {
 
   return (
     <nav className="header">
-    <span>Header</span>
     <div>
       {token ? (
         <>
-          <span onClick={logoutUser}>
-            <Link to="/logout">Logout</Link>
+          <span>
+            <Link to="/">Products </Link>
           </span>
           <span>
-            <Link to="/profile">Profile</Link>
+            <Link to="/profile">Profile </Link>
+          </span>
+          <span onClick={logoutUser}>
+            <Link to="/logout">Logout </Link>
           </span>
         </>
       ) : (
         <span>
-          <Link to="/">Login</Link>
+          <Link to="/login">Login</Link>
         </span>
       )}
     </div>
