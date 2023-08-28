@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import Banner from "./Banner/Banner";
 import Products from "./Products/Products";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Banner></Banner>
       <Products></Products>
+      <Footer></Footer>
     </>
   );
 };
