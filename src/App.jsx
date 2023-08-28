@@ -5,7 +5,7 @@ import { UserProvider } from "./context/UserContext/UserState";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
 import { ProductsProvider } from "./context/ProductsContext/ProductsState";
-import { OrdersProvider } from "./context/OrdersContext/OrdersSate";
+import { OrdersProvider } from "./context/OrdersContext/OrdersState";
 import Home from "./components/Home/Home";
 import Cart from "./components/Cart/Cart";
 
