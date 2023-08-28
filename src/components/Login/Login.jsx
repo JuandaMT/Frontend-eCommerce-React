@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../../context/UserContext/UserState";
-import { Form, Input, Button } from "antd";
+import { Form, Input, Button, notification } from "antd";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -8,7 +8,14 @@ const Login = () => {
   const navigate = useNavigate();
   const onFinish = (values) => {
     login(values);
-    navigate("/");
+    notification.success({
+      message: 'Correctamente logeado',
+      description:
+        'Bienvenido!!!',
+    });
+  setTimeout(() => {
+      navigate("/profile")
+  }, 3000);
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -29,7 +36,7 @@ const Login = () => {
         <Form.Item
           label="Email"
           name="email"
-          rules={[{ required: true, message: "Please input your email!" }]}
+          rules={[{ required: true, message: "Por favor introduce tu email!" }]}
         >
           <Input />
         </Form.Item>
@@ -37,7 +44,7 @@ const Login = () => {
         <Form.Item
           label="Password"
           name="password"
-          rules={[{ required: true, message: "Please input your password!" }]}
+          rules={[{ required: true, message: "Por favor introduce tu contraseña!" }]}
         >
           <Input.Password />
         </Form.Item>
