@@ -4,6 +4,8 @@ import { UserContext } from "../../context/UserContext/UserState";
 import { HomeOutlined, LogoutOutlined } from "@ant-design/icons";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { UserOutlined } from "@ant-design/icons";
+import "./Header.scss"
+
 function Header() {
   const { token, logout } = useContext(UserContext);
 

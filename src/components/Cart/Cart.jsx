@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Divider, List } from "antd";
 import { OrdersContext } from "../../context/OrdersContext/OrdersState";
 import { ProductsContext } from "../../context/ProductsContext/ProductsState";
+import "./Cart.scss";
 
 const Cart = () => {
   const { cart, clearCart } = useContext(ProductsContext);
@@ -11,10 +12,9 @@ const Cart = () => {
 
   return (
     <div>
-      <Divider orientation="left">Cart</Divider>
       <List
         size="small"
-        header={<div>Productos</div>}
+        header={<div className="letra">Productos</div>}
         footer={
           <div>
             <button onClick={clearCart}>Vaciar carrito</button>
