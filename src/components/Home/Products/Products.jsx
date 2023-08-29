@@ -22,7 +22,7 @@ const Products = () => {
             style={{
               width: 300,
               border: "1px solid",
-              borderColor: "pink",
+              borderColor: "#C5BBAD",
             }}
           >
             <p>{product.price} €</p>
