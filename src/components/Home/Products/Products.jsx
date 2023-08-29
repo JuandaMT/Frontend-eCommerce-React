@@ -1,15 +1,23 @@
 import React, { useContext, useEffect } from "react";
 import { ProductsContext } from "../../../context/ProductsContext/ProductsState";
-import { Card } from "antd";
+import { Card, notification } from "antd";
 import "./Products.scss";
 
 const Products = () => {
   const { getProducts, products, addCart, cart } = useContext(ProductsContext);
 
-  //se ejecuta cada vez que se monta el componente
   useEffect(() => {
     getProducts();
   }, []);
+
+  const addProduct = (product)=>{
+    return (
+      addCart(product),
+      notification.success({
+        message: "Producto añadido",
+      })
+    )
+  }
 
   return (
     <div className="products-container">
@@ -27,7 +35,7 @@ const Products = () => {
           >
             <p>{product.price} €</p>
             {/* metemos addCart dentro de una función para que no se ejecute al cargar el componente */}
-            <button onClick={() => addCart(product)}>Add cart</button>
+            <button onClick={() => addProduct(product)}>Add cart</button>
           </Card>
         );
       })}
