@@ -2,27 +2,23 @@ import React from "react";
 import { Carousel } from "antd";
 import "./Banner.scss"
 const contentStyle = {
-  height: "260px",
-  width: '100%',
-  color: "#fff",
-  lineHeight: "260px",
-  textAlign: "center",
-  background: "#8349E6",
+  height: "150px",
+  lineHeight: "150px",
+
 };
 const Banner = () => (
   <Carousel className="carrusel" autoplay>
-    <div style={contentStyle}>
-      <div className="contenido"><p>Hola me llamo Juanda</p></div>
-    <h3 >1</h3>
+    <div style={contentStyle} className="div"> 
+      <img  className="imagen" src="media\Banner\1.png" alt="imagen de ecommerce" />
     </div>
-    <div>
-    <h3 style={contentStyle}>2</h3>
+    <div className="div">
+    <img className="imagen" src="media\Banner\2.png" alt="imagen de ecommerce" />
     </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
+    <div className="div">
+    <img className="imagen" src="media\Banner\3.png" alt="imagen de ecommerce" />
     </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
+    <div className="div">
+    <img className="imagen" src="media\Banner\4.png" alt="imagen de ecommerce" />
     </div>
   </Carousel>
 );
