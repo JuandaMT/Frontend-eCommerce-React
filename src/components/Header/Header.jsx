@@ -4,7 +4,7 @@ import { UserContext } from "../../context/UserContext/UserState";
 import { HomeOutlined, LogoutOutlined } from "@ant-design/icons";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { UserOutlined } from "@ant-design/icons";
-import "./Header.scss"
+import "./Header.scss";
 
 function Header() {
   const { token, logout } = useContext(UserContext);
@@ -22,16 +22,23 @@ function Header() {
         {token ? (
           <>
             <span>
-              <Link to="/"><HomeOutlined/> </Link>
+              <Link className="icon" to="/">
+                <HomeOutlined />{" "}
+              </Link>
             </span>
             <span>
-              <Link to="/cart"> <ShoppingCartOutlined/> </Link>
+              <Link className="icon" to="/cart">
+                {" "}
+                <ShoppingCartOutlined />{" "}
+              </Link>
             </span>
             <span>
-              <Link to="/profile"><UserOutlined/> </Link>
+              <Link className="icon" to="/profile">
+                <UserOutlined />{" "}
+              </Link>
             </span>
             <span onClick={logoutUser}>
-              <Link to="/logout">
+              <Link className="icon" to="/logout">
                 <LogoutOutlined />
               </Link>
             </span>

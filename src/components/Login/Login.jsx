@@ -1,19 +1,36 @@
 import { useContext } from "react";
 import { UserContext } from "../../context/UserContext/UserState";
-import { Form, Input, Button } from "antd";
+import { Form, Input, Button, notification } from "antd";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { login } = useContext(UserContext);
   const navigate = useNavigate();
+  
   const onFinish = (values) => {
+    const token = JSON.parse(localStorage.getItem("token"));
     login(values);
-    navigate("/");
+    /* ERROR. CUANDO TE REGISTRAS CORRECTAMENTE TIENES QUE DARLE OTRA VEZ PARA PODER ENTRAR */
+    if (!token) {
+      notification.error({
+        message: "Wrong email or password",
+      });
+    } else {
+      notification.success({
+        message: "Successfully logged",
+      });
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
+};
   };
 
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
+
+  
+
 
   return (
     <div className="container">

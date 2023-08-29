@@ -1,24 +1,22 @@
 import React from "react";
 import { Carousel } from "antd";
-
+import "./Banner.scss"
 const contentStyle = {
-  height: "360px",
+  height: "260px",
   width: '100%',
   color: "#fff",
-  lineHeight: "360px",
+  lineHeight: "260px",
   textAlign: "center",
-  background: "#364d79",
+  background: "#8349E6",
 };
 const Banner = () => (
-  <Carousel autoplay>
-    <div>
-      <img style={contentStyle}
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png"
-        alt=""
-      />
+  <Carousel className="carrusel" autoplay>
+    <div style={contentStyle}>
+      <div className="contenido"><p>Hola me llamo Juanda</p></div>
+    <h3 >1</h3>
     </div>
     <div>
-      <h3 style={contentStyle}>2</h3>
+    <h3 style={contentStyle}>2</h3>
     </div>
     <div>
       <h3 style={contentStyle}>3</h3>
