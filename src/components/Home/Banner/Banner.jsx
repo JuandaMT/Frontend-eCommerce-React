@@ -6,7 +6,7 @@ const contentStyle = {
   lineHeight: "150px",
 };
 const Banner = () => (
-  <Carousel className="carrusel" autoplay>
+  <Carousel className="carrusel" effect="fade">
     <div style={contentStyle} className="div">
       <img
         className="imagen"

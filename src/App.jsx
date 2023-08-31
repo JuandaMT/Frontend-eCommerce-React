@@ -7,6 +7,8 @@ import { ProductsProvider } from "./context/ProductsContext/ProductsState";
 import { OrdersProvider } from "./context/OrdersContext/OrdersState";
 import Home from "./components/Home/Home";
 import Cart from "./components/Cart/Cart";
+import Footer from "./components/Home/Footer/Footer";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
                   <Route path="/login" element={<Login />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/cart" element={<Cart />} />
+                  <Route path="/register" element={<Register />} />
                 </Routes>
+                <Footer></Footer>
               </OrdersProvider>
             </ProductsProvider>
           </UserProvider>

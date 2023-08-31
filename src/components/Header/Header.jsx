@@ -44,9 +44,11 @@ function Header() {
             </span>
           </>
         ) : (
-          <span>
-            <Link to="/login">Login</Link>
+          <span >
+            <Link className="login" to="/login">Login</Link>
+            <Link className="login" to="/register">Register</Link>
           </span>
+          
         )}
       </div>
     </nav>

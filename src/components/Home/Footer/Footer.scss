@@ -1,12 +1,36 @@
-.letra{
-    color: black;
+.letra {
+  color: black;
 }
-.footer{
-    width: 100%;
-    /* display: flex;
-    flex-wrap: wrap; */
-    h1{
-        background-color: #C5BBAD;
-        color: #FFFFFF;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 3%;
+  .bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
     }
+    a {
+      color: black;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    a:focus,
+    a:hover {
+      color: #cfcfcf;
+    }
+  }
 }

@@ -1,56 +1,48 @@
-.header{
-    padding: 1.5%;
-    background-color: rgba($color: #AB7CFF, $alpha: 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+  padding: 5px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon {
-    font-size: 20px;
-    background: transparent;
-    border: none;
-    padding: 1em 1.5em;
-    color: #2E263D;
-    text-transform: uppercase;
-    position: relative;
-    transition: .5s ease;
-    text-decoration: none;
-  }
-  
-  .icon::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: #2E263D;
-    transition: .5s ease;
-  }
-  
-  .icon:hover {
-    color: #1e1e2b;
-    transition-delay: .5s;
-  }
-  
-  .icon:hover::before {
-    width: 100%;
-  }
-  
-  .icon::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100%;
-    background-color: #AB7CFF;
-    transition: .4s ease;
-    z-index: -1;
-  }
-  
-  .icon:hover::after {
-    height: 100%;
-    transition-delay: 0.4s;
-    color: aliceblue;
-  }
+  font-size: 18px;
+  color: black;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.icon:focus,
+.icon:hover {
+  color: #cfcfcf;
+}
+.login {
+  font-size: 18px;
+  color: black;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  text-decoration: none;
+  margin: 20px;
+}
+.login:focus,
+.login:hover {
+  color: #cfcfcf;
+}

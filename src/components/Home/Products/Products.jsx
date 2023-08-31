@@ -24,6 +24,7 @@ const Products = () => {
       {products.map((product) => {
         return (
           <Card
+            className="card"
             key={product._id}
             title={product.name}
             bordered={false}
@@ -33,6 +34,7 @@ const Products = () => {
               borderColor: "#C5BBAD",
             }}
           >
+            <img className="imagen" src="https://cdn.pixabay.com/photo/2016/01/10/22/52/letters-1132703_1280.png" alt="" srcset="" />
             <p>{product.price} €</p>
             {/* metemos addCart dentro de una función para que no se ejecute al cargar el componente */}
             <button onClick={() => addProduct(product)}>Add cart</button>
