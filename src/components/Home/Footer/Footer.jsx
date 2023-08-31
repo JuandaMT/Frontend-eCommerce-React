@@ -41,31 +41,23 @@ const Footer = () => {
       <div className="container">
         <div className="bloque">
           <h3>¿QUIENES SOMOS?</h3>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
+          <a href="">Dónde encontrarnos</a>
+          <a href="">Misión y visión</a>
         </div>
         <div className="bloque">
           <h3>PREGUNTAS FRECUENTES</h3>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
+          <a href="">¿Cómo cancelar un pedido?</a>
+          <a href="">¿Cuánto tarda un pedido?</a>
         </div>
         <div className="bloque">
           <h3>CONTACTO</h3>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
+          <a href="">Instagram</a>
+          <a href="">Twitter</a>
         </div>
         <div className="bloque">
           <h3>MI CUENTA</h3>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
-          <a href="">hola</a>
+          <a href="">Perfil</a>
+          <a href="">Cambio de cuenta</a>
         </div>
       </div>
     </div>

@@ -29,7 +29,6 @@ const Cart = () => {
       <List
       className="lista"
         size="small"
-       /*  header={<div className="letra">PRODUCTOS</div>} */
         footer={
           <div>
             <button className="boton" onClick={clearCart}>Vaciar carrito</button>

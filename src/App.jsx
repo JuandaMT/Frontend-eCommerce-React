@@ -9,7 +9,6 @@ import Home from "./components/Home/Home";
 import Cart from "./components/Cart/Cart";
 import Footer from "./components/Home/Footer/Footer";
 import Register from "./components/Register/Register";
-import Logout from "./components/Logout/Logout";
 import "./App.scss"
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/cart" element={<Cart />} />
                   <Route path="/register" element={<Register />} />
-                  <Route path="/logout" element={<Logout />} />
                 </Routes>
                 <Footer></Footer>
               </OrdersProvider>

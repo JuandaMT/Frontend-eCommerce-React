@@ -22,7 +22,7 @@ const Login = () => {
       });
       setTimeout(() => {
         navigate("/");
-      }, 2000);
+      }, 1000);
 };
   };
 
