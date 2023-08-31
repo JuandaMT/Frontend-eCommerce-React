@@ -5,6 +5,7 @@ import { HomeOutlined, LogoutOutlined } from "@ant-design/icons";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { UserOutlined } from "@ant-design/icons";
 import "./Header.scss";
+import Drop from "../Dropdown/Dropdown";
 
 function Header() {
   const { token, logout } = useContext(UserContext);
@@ -18,37 +19,59 @@ function Header() {
 
   return (
     <nav className="header">
-      <div>
+      <div className="header2">
         {token ? (
           <>
-            <span>
-              <Link className="icon" to="/">
-                <HomeOutlined />{" "}
-              </Link>
-            </span>
-            <span>
-              <Link className="icon" to="/cart">
-                {" "}
-                <ShoppingCartOutlined />{" "}
-              </Link>
-            </span>
-            <span>
-              <Link className="icon" to="/profile">
-                <UserOutlined />{" "}
-              </Link>
-            </span>
-            <span onClick={logoutUser}>
-              <Link className="icon" to="/logout">
-                <LogoutOutlined />
-              </Link>
-            </span>
+            <div className="contenedorHeader">
+              <div className="logo">
+                <img src="media\Gif\Logo recortado.png" alt="" />
+              </div>
+              <div className="enlaces">
+                <span>
+                  <Link className="icon" to="/">
+                    <HomeOutlined />{" "}
+                  </Link>
+                </span>
+                <span>
+                  <Drop></Drop>
+                </span>
+
+                <span>
+                  <Link className="icon" to="/cart">
+                    {" "}
+                    <ShoppingCartOutlined />{" "}
+                  </Link>
+                </span>
+                <span>
+                  <Link className="icon" to="/profile">
+                    <UserOutlined />{" "}
+                  </Link>
+                </span>
+                <span onClick={logoutUser}>
+                  <Link className="icon" to="/logout">
+                    <LogoutOutlined />
+                  </Link>
+                </span>
+              </div>
+            </div>
           </>
         ) : (
-          <span >
-            <Link className="login" to="/login">Login</Link>
-            <Link className="login" to="/register">Register</Link>
+          <div className="contenedorHeader">
+            <div className="logo">
+                <img src="media\Gif\Logo recortado.png" alt="" />
+              </div>
+          <span className="enlaces">
+            <Link className="icon" to="/">
+              <HomeOutlined />
+            </Link>
+            <Link className="login" to="/login">
+              Login
+            </Link>
+            <Link className="login" to="/register">
+              Register
+            </Link>
           </span>
-          
+          </div>
         )}
       </div>
     </nav>

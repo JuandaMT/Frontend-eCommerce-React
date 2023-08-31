@@ -1,9 +1,16 @@
 .header {
-  padding: 5px;
-  margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.911);
+  z-index: 5;
+  height: 70px;
+  width: 100%;
+  .header2{
+    width: 100%;
+  }
 }
 .icon {
   font-size: 18px;
@@ -45,4 +52,22 @@
 .login:focus,
 .login:hover {
   color: #cfcfcf;
+}
+
+.contenedorHeader{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .logo{
+    height: 70px;
+    margin-right: 2%;
+    img{
+      height: 70px;
+    }
+  }
+}
+.enlaces{
+  margin-left: 2%;
 }

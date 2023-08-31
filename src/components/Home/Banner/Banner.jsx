@@ -6,7 +6,7 @@ const contentStyle = {
   lineHeight: "150px",
 };
 const Banner = () => (
-  <Carousel className="carrusel" effect="fade">
+  <Carousel autoplay className="carrusel" effect="fade">
     <div style={contentStyle} className="div">
       <img
         className="imagen"
@@ -25,13 +25,6 @@ const Banner = () => (
       <img
         className="imagen"
         src="media\Banner\3.png"
-        alt="imagen de ecommerce"
-      />
-    </div>
-    <div className="div">
-      <img
-        className="imagen"
-        src="media\Banner\4.png"
         alt="imagen de ecommerce"
       />
     </div>

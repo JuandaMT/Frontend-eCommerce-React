@@ -1,12 +1,13 @@
-import Footer from "./Footer/Footer";
 import Banner from "./Banner/Banner";
+import Gif from "./Gif/Gif";
 import Products from "./Products/Products";
 
 const Home = () => {
   return (
     <>
-      <Banner></Banner>
+      <Gif></Gif>
       <Products></Products>
+      <Banner></Banner>
     </>
   );
 };

@@ -1,25 +1,23 @@
-.letra {
-  color: black;
+.texto{
+  width: 80%;
+  margin-top: 1%;
 }
+
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   background-color: #f0f0f0;
-  color: black;
-  padding: 3%;
   .bloque {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 3%;
     a {
-      text-decoration: none;
-      color: black;
-    }
-    a {
-      color: black;
+      color: rgb(134, 134, 134);
       font-family: inherit;
-      font-weight: 500;
       cursor: pointer;
       transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
       transition-duration: 400ms;
@@ -33,4 +31,13 @@
       color: #cfcfcf;
     }
   }
+  .container{
+    width: 90%;
+    padding: 0;
+    margin: 1%;
+  }
+  h3{
+    color: rgb(109, 109, 109);
+  }
+  h2{color: rgb(90, 90, 90);}
 }

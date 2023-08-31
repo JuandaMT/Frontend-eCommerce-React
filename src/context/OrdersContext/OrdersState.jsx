@@ -10,7 +10,7 @@ export const OrdersProvider = ({ children }) => {
     const token = JSON.parse(localStorage.getItem("token"));
     try {
       await axios.post(
-        API_URL + "/orders",
+        API_URL + "/orders/create",
         { productIds: cart },
         {
           headers: {
